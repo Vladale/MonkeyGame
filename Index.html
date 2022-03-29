@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="/ScriptPPP.js"></script>
+   
+</head>
+<body style="display: flex; justify-content: center;">
+    <div class="box-holder">
+        <div class="box-header d-flex m-4">
+            <p class="m-3" >Enter the stake:</p>
+            <input id="totalBet" class="input-group-text" type="text">
+            <!-- <p class="m-3">Trenutni Ulog:</p>
+            <p class="m-3" id="totalBetCurrent">X</p> -->
+            <button id="playGame" type="button" class="btn btn-primary mx-3" onclick="play()">Play</button>
+            <button id="playGameAgain" type="button" class="btn btn-primary mx-3 " onclick="playAgain()">Another chance (50%)</button>
+            <button type="button" class="btn btn-danger" onclick="turnOff()">Come out and take it</button>
+            <p class="m-3" >Current round:</p>
+            <p class="m-3" id="cRound"></p>   
+            <p class="m-3" >Random:</p>  
+            <p class="m-3" id="rand"></p>
+            
+
+            
+        </div>
+        <div class="box-main">
+            <div class="box-r" id="round1"></div>
+            <div class="box-r" id="round2"></div>
+            <div class="box-r" id="round3"></div>
+            <div class="box-r" id="round4"></div>
+            <div class="box-r" id="round5"></div>
+
+
+        </div>
+        <div class="box-footer">
+            <p >Total gain:  </p>
+            <!-- <p class="m-3" id="maxValue"></p> -->
+            <p style="margin-left: 30px; color: red;" id="maxValue"></p>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
